@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <tr>
+            <th>Symbol</td>
+            <th>Name</td>
+            <th>Shares</td>
+            <th>Price</td>
+            <th>Total</td>
+        </tr>
+        {% for buy in buys %}
+            <tr>
+                <td>{{ buy["quote_bought"] }}</td>
+                <td>{{ buy["quote_name"] }}</td>
+                <td>{{ buy["SUM(shares)"] }}</td>
+                <td>{{ buy["price"] }}</td>
+                <td>{{ buy["total"] }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Cash</b></td>
+            <td>{{ cash }}</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><b>Total</b></td>
+            <td>{{ totals }}</td>
+        </tr>
+    </table>
+{% endblock %}

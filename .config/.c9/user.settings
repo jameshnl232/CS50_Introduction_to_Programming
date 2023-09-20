@@ -1,0 +1,28 @@
+{
+    "ace": {
+        "@fontSize": 12,
+        "@keyboardmode": "default"
+    },
+    "collab": {
+        "@timeslider-visible": false
+    },
+    "debug": {
+        "@pause": 0
+    },
+    "imgeditor": {
+        "@smooth": false,
+        "@zoom": 100
+    },
+    "openfiles": {
+        "@show": false
+    },
+    "projecttree": {
+        "@showhidden": false
+    },
+    "tabs": {
+        "@show": true
+    },
+    "terminal": {
+        "@fontsize": 12
+    }
+}
